@@ -1,0 +1,32 @@
+#header {
+  display: flex; /* czy to jest potrzebne ?*/
+  /*width: 100%;
+  height: 1100px;
+  background-image: url(sanki1.jpg);
+  background-position: top center;
+  background-color: black;
+  background-repeat: no-repeat;
+  */
+}
+.svg-image {
+  height: 100%;
+}
+#path5251,
+#path5245,
+#path5235,
+#path5241,
+#path5243,
+#path5237,
+#path5231 {
+  transform-origin: 50% 50%;
+  animation-name: arm;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes arm {
+  50% {
+    transform: translateY(1px);
+  }
+}
