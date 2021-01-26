@@ -1,16 +1,50 @@
-#header {
-  display: flex; /* czy to jest potrzebne ?*/
-  /*width: 100%;
-  height: 1100px;
-  background-image: url(sanki1.jpg);
-  background-position: top center;
-  background-color: black;
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  background: rgb(105, 185, 188);
+  background: linear-gradient(
+    90deg,
+    rgba(105, 185, 188, 1) 1%,
+    rgba(3, 83, 99, 1) 43%,
+    rgba(6, 15, 45, 1) 84%
+  );
   background-repeat: no-repeat;
-  */
+  background-size: contain;
+  font-size: 10px;
 }
-.svg-image {
-  height: 100%;
+header {
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+  justify-content: flex-start;
 }
+
+header nav {
+  align-self: flex-start;
+}
+hgroup {
+  text-align: center;
+}
+#svheader {
+  align-self: flex-end;
+}
+
+main {
+  background-color: #ffffff;
+  display: flex;
+  height: 100vh;
+  margin: 0 auto;
+  width: calc(100% - 4rem);
+  max-width: 72rem;
+  z-index: 2;
+}
+
+.svg {
+  height: 100vh;
+  align-items: center;
+}
+
 #path5251,
 #path5245,
 #path5235,
@@ -19,14 +53,30 @@
 #path5237,
 #path5231 {
   transform-origin: 50% 50%;
-  animation-name: arm;
+  animation-name: body;
   animation-duration: 3s;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
 }
 
-@keyframes arm {
+@keyframes body {
   50% {
     transform: translateY(1px);
+  }
+}
+
+#path5251 {
+  transform-origin: 20, 80;
+  transform: rotate(-12deg);
+  animation: path5251 4s infinite;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+}
+@keyframes path5251 {
+  100% {
+    transform: rotate(-12deg);
+  }
+  0% {
+    transform: rotate(1deg);
   }
 }
