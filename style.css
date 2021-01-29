@@ -9,40 +9,41 @@ body {
     rgba(3, 83, 99, 1) 43%,
     rgba(6, 15, 45, 1) 84%
   );
-  background-repeat: no-repeat;
+
   background-size: contain;
   font-size: 10px;
 }
 header {
   display: flex;
-  height: 100vh;
+  height: 50vh;
   flex-direction: column;
   justify-content: flex-start;
+  font-family: "Caveat", cursive;
+}
+header > * {
+  flex-basis: 100%;
 }
 
 header nav {
-  align-self: flex-start;
-}
-hgroup {
-  text-align: center;
-}
-#svheader {
   align-self: flex-end;
+  margin: 2rem;
+  color: #ffffff;
+  font-size: 3rem;
 }
 
-main {
-  background-color: #ffffff;
-  display: flex;
-  height: 100vh;
-  margin: 0 auto;
-  width: calc(100% - 4rem);
-  max-width: 72rem;
-  z-index: 2;
+header h1 {
+  font-size: 2rem;
+  color: #ffffff;
+  text-align: center;
+  text-transform: uppercase;
 }
 
 .svg {
   height: 100vh;
-  align-items: center;
+  align-self: center;
+  width: calc(100% - 4rem);
+  max-width: 72rem;
+  z-index: 2;
 }
 
 #path5251,
@@ -54,7 +55,7 @@ main {
 #path5231 {
   transform-origin: 50% 50%;
   animation-name: body;
-  animation-duration: 3s;
+  animation-duration: 2s;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
 }
@@ -68,7 +69,7 @@ main {
 #path5251 {
   transform-origin: 20, 80;
   transform: rotate(-12deg);
-  animation: path5251 4s infinite;
+  animation: path5251 3s infinite;
   animation-direction: alternate;
   animation-iteration-count: infinite;
 }
@@ -79,4 +80,27 @@ main {
   0% {
     transform: rotate(1deg);
   }
+}
+
+#arrow {
+  align-self: center;
+  height: 30px;
+  width: 30px;
+  padding: 0.2rem;
+  border: 2px solid #ffffff;
+  border-radius: 50%;
+  color: #ffffff;
+  margin: 0.5rem;
+  font-size: 1rem;
+  text-align: center;
+}
+
+main {
+  background-color: #ffffff;
+  display: flex;
+  height: 100vh;
+  margin: auto;
+  width: calc(100% - 4rem);
+  max-width: 72rem;
+  z-index: 2;
 }
