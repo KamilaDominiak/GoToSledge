@@ -97,14 +97,27 @@ header img:hover {
 main {
   background-color: #ffffff;
   display: flex;
+  flex-direction: column;
   height: 100vh;
   margin: auto;
   width: calc(100% - 4rem);
   max-width: 72rem;
 }
 
+.map {
+  height: 500px;
+  width: 600px;
+}
+
 @media (orientation: portrait) {
 }
 
 @media (orientation: landscape) {
+}
+
+@media (max-width: 767px) {
+  .map {
+    height: 200px;
+    width: 250px;
+  }
 }
