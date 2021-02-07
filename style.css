@@ -37,6 +37,7 @@ header {
 }
 
 header h1 {
+  font-size: 3rem;
   flex-basis: 20%;
   color: #ffffff;
   text-align: center;
@@ -45,7 +46,7 @@ header h1 {
 
 .svg {
   align-self: center;
-  width: 250%;
+  width: 150%;
   flex-basis: 40%;
 }
 
@@ -85,13 +86,9 @@ header h1 {
   }
 }
 
-header img {
-  height: 5%;
+#arrow {
+  height: 3%;
   flex-basis: 20%;
-}
-
-header img:hover {
-  color: black;
 }
 
 main {
@@ -107,6 +104,25 @@ main {
 .map {
   height: 500px;
   width: 600px;
+  display: block;
+  align-self: center;
+  padding: 5em;
+}
+
+.formularz {
+  padding: 5%;
+  width: calc(100% - 7rem);
+  align-self: center;
+  background-color: #444;
+  color: #ffffff;
+  text-align: center;
+}
+
+#new {
+  border-radius: 20%;
+  border: 2px rgba(6, 15, 45, 1) solid;
+  background-color: #d3d3d3;
+  color: rgb(2, 2, 2);
 }
 
 @media (orientation: portrait) {
@@ -115,7 +131,34 @@ main {
 @media (orientation: landscape) {
 }
 
-@media (max-width: 767px) {
+@media (max-width: 817px) {
+  .navbar {
+    align-self: flex-end;
+    color: #ffffff;
+    flex-basis: 10%;
+    font-size: 1rem;
+    padding: 5%;
+    padding-top: 10%;
+  }
+
+  header h1 {
+    font-size: 1.5rem;
+    flex-basis: 20%;
+    color: #ffffff;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  .svg {
+    align-self: center;
+    width: 250%;
+    flex-basis: 40%;
+  }
+  #arrow {
+    height: 3%;
+    flex-basis: 20%;
+  }
+
   .map {
     height: 200px;
     width: 250px;
