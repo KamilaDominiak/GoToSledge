@@ -31,13 +31,14 @@ header {
   align-self: flex-end;
   color: #ffffff;
   flex-basis: 10%;
-  font-size: 1rem;
+  font-size: 2rem;
   padding: 5%;
   padding-top: 10%;
 }
-.navbar:hover {
+.navbar:hover,
+.navbar:active {
   color: rgba(105, 185, 188, 1);
-  font-size: 1.5rem;
+  font-size: 2.5rem;
 }
 
 header h1 {
@@ -95,12 +96,27 @@ header h1 {
   color: #ffffff;
   flex-basis: 10%;
   font-size: 2rem;
-  padding: 5%;
-  padding-top: 10%;
+  margin-top: 10px;
 }
 
-#arrow:hover {
-  background-image: url("img/circle2.svg");
+#arrow:hover,
+#arrow:active {
+  color: rgba(105, 185, 188, 1);
+  border-radius: 100%;
+  text-shadow: 0 15px 0 rgba(105, 185, 188, 1);
+  animation: arrow 1.6s infinite linear;
+}
+
+@keyframes arrow {
+  0% {
+    transform: translateY(-50px);
+  }
+  50% {
+    transform: translateY(0px);
+  }
+  100% {
+    transform: translateY(50px);
+  }
 }
 
 main {
