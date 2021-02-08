@@ -92,6 +92,7 @@ header h1 {
 }
 
 #arrow {
+  scroll-behavior: smooth;
   align-self: center;
   color: #ffffff;
   flex-basis: 10%;
@@ -127,6 +128,7 @@ main {
   margin: auto;
   width: calc(100% - 4rem);
   max-width: 72rem;
+  z-index: 1;
 }
 
 .map {
