@@ -15,7 +15,7 @@
    version="1.1"
    id="svg8"
    inkscape:version="0.92.4 (5da689c313, 2019-01-14)"
-   sodipodi:docname="circle.svg">
+   sodipodi:docname="circle2.svg">
   <defs
      id="defs2" />
   <sodipodi:namedview
@@ -45,7 +45,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -55,15 +55,15 @@
      id="layer1"
      transform="translate(0,-41.803847)">
     <ellipse
-       style="fill:#333333;fill-opacity:0.01593628;stroke:#fdfefe;stroke-width:4.28245878;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       style="fill:#333333;fill-opacity:0.01593628;stroke:#d1f9f2;stroke-width:4.28245878;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        id="circle"
        cx="87.381264"
        cy="213.09743"
        rx="40.369068"
        ry="40.460785" />
     <path
-       style="fill:none;stroke:#fdfdfd;stroke-width:1.97100389;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       d="m 63.240583,203.18189 24.190478,24.59429 v 0 l 26.458329,-23.64836"
+       style="fill:none;stroke:#d1f9f2;stroke-width:1.97100389;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="M 63.507853,220.82171 87.698331,245.416 v 0 l 26.458329,-23.64836"
        id="arrow"
        inkscape:connector-curvature="0" />
   </g>

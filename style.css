@@ -104,18 +104,18 @@ header h1 {
   color: rgba(105, 185, 188, 1);
   border-radius: 100%;
   text-shadow: 0 15px 0 rgba(105, 185, 188, 1);
-  animation: arrow 1.6s infinite linear;
+  animation: arrow 1s infinite linear;
 }
 
 @keyframes arrow {
   0% {
-    transform: translateY(-50px);
+    transform: translateY(-20px);
   }
   50% {
     transform: translateY(0px);
   }
   100% {
-    transform: translateY(50px);
+    transform: translateY(20px);
   }
 }
 
