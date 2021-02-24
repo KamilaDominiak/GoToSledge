@@ -228,9 +228,6 @@
 </header>
 
 <main id="main">
-<div>
-
-</div>
 
    <form class ="formularz">
       <label>NOWE MIEJSCE DO ZJERZDZANIA</label><br>
@@ -238,9 +235,32 @@
 
    </form>
    <button onClick="wyslij()">Wyślij</button>
-   <a href="https://www.google.pl/maps/dir//54.476833470692114,+18.4992049272838/@54.4716342,18.4942267,15z/data=!4m7!4m6!1m0!1m3!2m2!1d18.4992049!2d54.4768335!3e0">Odnośnik do górki 1  </a>
 
 
+<?php
+$dbhost="mysql:host=localhost;dbname=gorki";
+$dbuser="root";
+$dbpassword="";
+
+try{
+
+$db_conn= new PDO ($dbhost, $dbuser, $dbpassword);
+
+$query="SELECT mapa_google FROM dane_gorki WHERE id_dzielnica='1'";
+$sth = $db_conn->query($query);
+
+
+
+ while($obj = $sth->fetch())
+{  echo "<iframe id='map' src=".$obj['mapa_google']."></iframe>"; }
+
+}
+catch(Exception $error)
+{
+   echo "Problem z odczytaniem danych";
+}
+
+?>
 
 </main>
 <footer></footer>

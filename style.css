@@ -131,9 +131,9 @@ main {
   z-index: 1;
 }
 
-.map {
-  height: 500px;
-  width: 600px;
+#map {
+  height: 400px;
+  width: 500px;
   display: block;
   align-self: center;
   padding: 5em;
@@ -189,7 +189,7 @@ main {
     flex-basis: 20%;
   }
 
-  .map {
+  #map {
     height: 200px;
     width: 250px;
   }
