@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500&display=swap" rel="stylesheet">
+
    </head>
 <body>
     <!--Header-->
@@ -236,7 +237,7 @@
    </form>
    <button onClick="wyslij()">Wyślij</button>
 
-
+<div class="map">
 <?php
 $dbhost="mysql:host=localhost;dbname=gorki";
 $dbuser="root";
@@ -261,7 +262,26 @@ catch(Exception $error)
 }
 
 ?>
+</div>
+<div>
+aaa</br>
 
+
+</div>
+
+<div id="map2"> </div>
+    <!-- Async script executes immediately and must be after any DOM elements used in callback. -->
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBIwzALxUPNbatRBj3Xi1Uhp0fFzwWNBkE&callback=initMap&libraries=&v=weekly"
+      async
+    ></script>
+
+
+<script src="js/javaScriptmap.js"></script>
+
+<div>
+
+</div>
 </main>
 <footer></footer>
 <script src="js/javaScript.js"></script>
