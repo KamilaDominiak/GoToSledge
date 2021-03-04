@@ -131,14 +131,13 @@ main {
   z-index: 1;
 }
 
-.map,
-#map,
 #map2 {
   height: 400px;
   width: 500px;
   display: block;
   align-self: center;
   padding: 5em;
+  margin: 10%;
 }
 
 .formularz {
@@ -191,7 +190,6 @@ main {
     flex-basis: 20%;
   }
 
-  #map,
   #map2 {
     height: 200px;
     width: 250px;

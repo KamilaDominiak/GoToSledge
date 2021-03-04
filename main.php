@@ -237,38 +237,9 @@
    </form>
    <button onClick="wyslij()">Wyślij</button>
 
-<div class="map">
-<?php
-$dbhost="mysql:host=localhost;dbname=gorki";
-$dbuser="root";
-$dbpassword="";
-
-try{
-
-$db_conn= new PDO ($dbhost, $dbuser, $dbpassword);
-
-$query="SELECT mapa_google FROM dane_gorki WHERE id_dzielnica='1'";
-$sth = $db_conn->query($query);
-
-
-
- while($obj = $sth->fetch())
-{  echo "<iframe id='map' src=".$obj['mapa_google']."></iframe>"; }
-
-}
-catch(Exception $error)
-{
-   echo "Problem z odczytaniem danych";
-}
-
-?>
-</div>
 <div>
-aaa</br>
-
 
 </div>
-
 <div id="map2"> </div>
     <!-- Async script executes immediately and must be after any DOM elements used in callback. -->
     <script
