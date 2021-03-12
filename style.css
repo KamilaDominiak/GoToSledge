@@ -51,7 +51,7 @@ header h1 {
 
 .svg {
   align-self: center;
-  width: 150%;
+  width: 100%;
   flex-basis: 40%;
 }
 
@@ -91,6 +91,20 @@ header h1 {
   }
 }
 
+/*.choinka {
+
+  animation: choinka1 8s infinite linear;
+}
+@keyframes choinka1 {
+  0% {
+    transform: translate(-1px, 4px);
+    transform-origin: center left;
+  }
+
+  100% {
+    transform: translate(256px, 12px);
+  }
+}*/
 #arrow {
   scroll-behavior: smooth;
   align-self: center;
@@ -123,23 +137,31 @@ header h1 {
 main {
   background-color: #ffffff;
   display: flex;
-  flex-direction: column;
+  justify-content: center;
   height: 100vh;
   margin: auto;
   width: calc(100% - 4rem);
   max-width: 72rem;
   z-index: 1;
+  flex-wrap: wrap;
 }
 
 #map2 {
   height: 400px;
   width: 500px;
   display: block;
-  align-self: center;
+  align-self: left;
   padding: 5em;
   margin: 10%;
 }
 
+nav ul {
+  width: 20em;
+  margin-top: 20em;
+  border: solid;
+  overflow: hidden;
+  overflow-y: scroll;
+}
 .formularz {
   padding: 5%;
   width: calc(100% - 7rem);
@@ -147,13 +169,17 @@ main {
   background-color: #444;
   color: #ffffff;
   text-align: center;
+  flex: 100%;
 }
 
-#new {
+#input {
   border-radius: 20%;
   border: 2px rgba(6, 15, 45, 1) solid;
   background-color: #d3d3d3;
   color: rgb(2, 2, 2);
+}
+.button {
+  flex: 100%;
 }
 
 @media (orientation: portrait) {
@@ -189,9 +215,20 @@ main {
     height: 3%;
     flex-basis: 20%;
   }
+  .formularz {
+    order: 0;
+  }
+  #input {
+    order: 1;
+  }
+  nav ul {
+    padding-top: 1em;
+    order: 2;
+  }
 
   #map2 {
     height: 200px;
     width: 250px;
+    order: 3;
   }
 }
