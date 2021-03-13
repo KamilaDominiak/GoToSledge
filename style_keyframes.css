@@ -1,0 +1,36 @@
+@keyframes body {
+  50% {
+    transform: translateY(1px);
+  }
+}
+
+@keyframes path5251 {
+  100% {
+    transform: rotate(-12deg);
+  }
+  0% {
+    transform: rotate(1deg);
+  }
+}
+
+/* @keyframes choinka1 {
+  0% {
+    transform: translate(-1px, 4px);
+    transform-origin: center left;
+  }
+
+  100% {
+    transform: translate(256px, 12px);
+  }*/
+
+@keyframes arrow {
+  0% {
+    transform: translateY(-20px);
+  }
+  50% {
+    transform: translateY(0px);
+  }
+  100% {
+    transform: translateY(20px);
+  }
+}

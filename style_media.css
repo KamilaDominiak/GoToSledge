@@ -1,0 +1,50 @@
+@media (orientation: portrait) {
+}
+
+@media (orientation: landscape) {
+}
+
+@media (max-width: 817px) {
+  .navbar {
+    align-self: flex-end;
+    color: #ffffff;
+    flex-basis: 10%;
+    font-size: 1rem;
+    padding: 5%;
+    padding-top: 10%;
+  }
+
+  header h1 {
+    font-size: 1.5rem;
+    flex-basis: 20%;
+    color: #ffffff;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  .svg {
+    align-self: center;
+    width: 250%;
+    flex-basis: 40%;
+  }
+  #arrow {
+    height: 3%;
+    flex-basis: 20%;
+  }
+  .formularz {
+    order: 0;
+  }
+  #input {
+    order: 1;
+  }
+  nav ul {
+    padding-top: 1em;
+    order: 2;
+  }
+
+  #map2 {
+    height: 200px;
+    width: 250px;
+    order: 3;
+  }
+}

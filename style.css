@@ -69,12 +69,6 @@ header h1 {
   animation-timing-function: linear;
 }
 
-@keyframes body {
-  50% {
-    transform: translateY(1px);
-  }
-}
-
 #path5251 {
   transform-origin: 20, 80;
   transform: rotate(-12deg);
@@ -82,28 +76,12 @@ header h1 {
   animation-direction: alternate;
   animation-iteration-count: infinite;
 }
-@keyframes path5251 {
-  100% {
-    transform: rotate(-12deg);
-  }
-  0% {
-    transform: rotate(1deg);
-  }
-}
 
 /*.choinka {
 
   animation: choinka1 8s infinite linear;
 }
-@keyframes choinka1 {
-  0% {
-    transform: translate(-1px, 4px);
-    transform-origin: center left;
-  }
 
-  100% {
-    transform: translate(256px, 12px);
-  }
 }*/
 #arrow {
   scroll-behavior: smooth;
@@ -122,23 +100,11 @@ header h1 {
   animation: arrow 1s infinite linear;
 }
 
-@keyframes arrow {
-  0% {
-    transform: translateY(-20px);
-  }
-  50% {
-    transform: translateY(0px);
-  }
-  100% {
-    transform: translateY(20px);
-  }
-}
-
 main {
   background-color: #ffffff;
   display: flex;
   justify-content: center;
-  height: 100vh;
+
   margin: auto;
   width: calc(100% - 4rem);
   max-width: 72rem;
@@ -182,53 +148,13 @@ nav ul {
   flex: 100%;
 }
 
-@media (orientation: portrait) {
-}
-
-@media (orientation: landscape) {
-}
-
-@media (max-width: 817px) {
-  .navbar {
-    align-self: flex-end;
-    color: #ffffff;
-    flex-basis: 10%;
-    font-size: 1rem;
-    padding: 5%;
-    padding-top: 10%;
-  }
-
-  header h1 {
-    font-size: 1.5rem;
-    flex-basis: 20%;
-    color: #ffffff;
-    text-align: center;
-    text-transform: uppercase;
-  }
-
-  .svg {
-    align-self: center;
-    width: 250%;
-    flex-basis: 40%;
-  }
-  #arrow {
-    height: 3%;
-    flex-basis: 20%;
-  }
-  .formularz {
-    order: 0;
-  }
-  #input {
-    order: 1;
-  }
-  nav ul {
-    padding-top: 1em;
-    order: 2;
-  }
-
-  #map2 {
-    height: 200px;
-    width: 250px;
-    order: 3;
-  }
+footer {
+  background: linear-gradient(
+      90deg,
+      rgba(105, 185, 188, 1) 1%,
+      rgba(3, 83, 99, 1) 43%,
+      rgba(6, 15, 45, 1) 84%
+    )
+    no-repeat;
+  height: 50vh;
 }
