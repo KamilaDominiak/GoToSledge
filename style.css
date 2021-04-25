@@ -121,7 +121,7 @@ main {
   margin: 10%;
 }
 
-nav ul {
+#sidebar {
   width: 20em;
   margin-top: 20em;
   border: solid;
