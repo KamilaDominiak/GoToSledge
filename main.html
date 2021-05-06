@@ -10,7 +10,8 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500&display=swap" rel="stylesheet">
-
+     <!--========== BOX ICONS ==========-->
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
    </head>
 <body>
     <!--Header-->
@@ -308,122 +309,151 @@
 <script src="js/javaScriptmap.js"></script>
 
 <!-- Menu -->
+
+
+<!-- Co zmienić :
+   może jakaś animacja  by się sidebar jakoś fajnie pojawiał :)
+      w pierwszym menu mają pokazać się miasta -> mają się rozwinąć
+      na wszystkie dzielnice z danego miasta
+      1. pomysł :
+      gdy klikniemy na daną dzielnicę pokaże się mapka z danego obszaru  i wszystkie
+      górki w danym obszarze
+      w menu będzie można wybrać konkretną górkę i wtedy pineska się odznaczy
+      lub trzeba będzie podmienić mapkę z jedną pineską
+
+-->
 <nav id="sidebar" >
 
-   <ul>
-      <li><a href="#">Gdańsk</a>
-         <ul>
-            <li><a href="#">Aniolki</a>
-                <ul>
-                  <li><a href="#">Nazwa górki1</a></li>
-                  <li><a href="#">Nazwa górki2</a></li>
-                  <li><a href="#">Nazwa górki3</a></li>
-                  <li><a href="#">Nazwa górki4</a></li>
-               </ul>
-            </li>
-            <li><a href="#">Brętowo</a>
-                <ul>
-                  <li><a href="#">Nazwa górki1</a></li>
-                  <li><a href="#">Nazwa górki2</a></li>
-                  <li><a href="#">Nazwa górki3</a></li>
-                  <li><a href="#">Nazwa górki4</a></li>
-               </ul>
-            </li>
-         </li>
-            <li><a href="#">Brzeźno</a>
-                <ul>
-                  <li><a href="#">Nazwa górki1</a></li>
-                  <li><a href="#">Nazwa górki2</a></li>
-                  <li><a href="#">Nazwa górki3</a></li>
-                  <li><a href="#">Nazwa górki4</a></li>
-               </ul>
-            </li>
-            </li>
-            <li><a href="#">Chełm</a></li>
-            ...
-         </ul>
+   <div class="nav_list">
+      <h3 class="nav_town">Gdańsk</h3>
+            <div class="nav_dropdown_district">
+               <a href="#">Aniolki</a>
+               <!--strzałka do dopracowania i dodania w pozostałych dzielnic-->
+               <i class='bx bx-chevron-down nav_icon nav_dropdown_icon'></i>
+                  <div class="nav_dropdown_hills">
+                     <a href="#" class="nav_dropdown_item">Nazwa górki1</a>
+                     <a href="#" class="nav_dropdown_item">Nazwa górki2</a>
+                     <a href="#" class="nav_dropdown_item">Nazwa górki3</a>
+                     <a href="#" class="nav_dropdown_item">Nazwa górki4</a>
+                  </div>
+            </div>
+            <div class="nav_dropdown_district">
+               <a href="#">Brętowo</a>
+               <div class="nav_dropdown_hills">
+                     <a href="#" class="nav_dropdown_item">Nazwa górki1</a>
+                     <a href="#" class="nav_dropdown_item">Nazwa górki2</a>
+                     <a href="#" class="nav_dropdown_item">Nazwa górki3</a>
+                     <a href="#" class="nav_dropdown_item">Nazwa górki4</a>
+               </div>
+            </div>
+            <div class="nav_dropdown_district">
+               <a href="#">Brzeźno</a>
+               <div class="nav_dropdown_hills">
+                     <a href="#" class="nav_dropdown_item">Nazwa górki1</a>
+                     <a href="#" class="nav_dropdown_item">Nazwa górki2</a>
+                     <a href="#" class="nav_dropdown_item">Nazwa górki3</a>
+                     <a href="#" class="nav_dropdown_item">Nazwa górki4</a>
+               </div>
+            </div>
+            <div class="nav_dropdown_district">
+               <a href="#">Chełm</a>
+               ...
+            </div>
 
-      </li>
-      <li><a href="#">Sopot</a>
-         <ul>
-            <li><a href="#">Brodwino</a>
-               <ul>
-                  <li><a href="#">Nazwa górki1</a></li>
-                  <li><a href="#">Nazwa górki2</a></li>
-                  <li><a href="#">Nazwa górki3</a></li>
-                  <li><a href="#">Nazwa górki4</a></li>
-               </ul>
-            </li>
-            <li><a href="#">Dolny Sopot</a>
-               <ul>
-                  <li><a href="#">Nazwa górki1</a></li>
-                  <li><a href="#">Nazwa górki2</a></li>
-                  <li><a href="#">Nazwa górki3</a></li>
-                  <li><a href="#">Nazwa górki4</a></li>
-               </ul>
-            </li>
-         </li>
-            <li><a href="#">Kamilenny Potok</a>
-               <ul>
-                  <li><a href="#">Nazwa górki1</a></li>
-                  <li><a href="#">Nazwa górki2</a></li>
-                  <li><a href="#">Nazwa górki3</a></li>
-                  <li><a href="#">Nazwa górki4</a></li>
-               </ul>
-            </li>
-            </li>
-            <li><a href="#">Karlikowo</a></li>
-            ...
-         </ul>
 
-      </li>
-      <li><a href="#">Gdynia</a>
-         <ul>
-            <li><a href="#">Babie Doły</a>
-               <ul>
-                  <li><a href="#">Nazwa górki1</a></li>
-                  <li><a href="#">Nazwa górki2</a></li>
-                  <li><a href="#">Nazwa górki3</a></li>
-                  <li><a href="#">Nazwa górki4</a></li>
-               </ul>
-            </li>
-            <li><a href="#">Chwarzno-Wiczlino</a>
-               <ul>
-                  <li><a href="#">Nazwa górki1</a></li>
-                  <li><a href="#">Nazwa górki2</a></li>
-                  <li><a href="#">Nazwa górki3</a></li>
-                  <li><a href="#">Nazwa górki4</a></li>
-               </ul>
-            </li>
-         </li>
-            <li><a href="#">Chylonia</a>
-               <ul>
-                  <li><a href="#">Nazwa górki1</a></li>
-                  <li><a href="#">Nazwa górki2</a></li>
-                  <li><a href="#">Nazwa górki3</a></li>
-                  <li><a href="#">Nazwa górki4</a></li>
-               </ul>
-            </li>
-            </li>
-            ....
-            <li><a href="#">Karwiny</a>
-               <ul>
-                  <li><a href="#">Nazwa górki1</a></li>
-                  <li><a href="#">Nazwa górki2</a></li>
-                  <li><a href="#">Nazwa górki3</a></li>
-                  <li><a href="#">Nazwa górki4</a></li>
-               </ul>
-            </li>
+      <h3 class="nav_town">Sopot</h3>
+            <div class="nav_dropdown_district">
+               <a href="#">Brodwino</a>
+               <div class="nav_dropdown_hills">
+                     <a href="#" class="nav_dropdown_item">Nazwa górki1</a>
+                     <a href="#" class="nav_dropdown_item">Nazwa górki2</a>
+                     <a href="#" class="nav_dropdown_item">Nazwa górki3</a>
+                     <a href="#" class="nav_dropdown_item">Nazwa górki4</a>
+               </div>
+            </div>
+            <div class="nav_dropdown_district">
+               <a href="#">Dolny Sopot</a>
+               <div class="nav_dropdown_hills">
+                     <a href="#" class="nav_dropdown_item">Nazwa górki1</a>
+                     <a href="#" class="nav_dropdown_item">Nazwa górki2</a>
+                     <a href="#" class="nav_dropdown_item">Nazwa górki3</a>
+                     <a href="#" class="nav_dropdown_item">Nazwa górki4</a>
+               </div>
 
-            </li>
+            </div>
+
+            <div class="nav_dropdown_district">
+               <a href="#">Kamilenny Potok</a>
+               <div class="nav_dropdown_hills">
+                     <a href="#" class="nav_dropdown_item">Nazwa górki1</a>
+                     <a href="#" class="nav_dropdown_item">Nazwa górki2</a>
+                     <a href="#" class="nav_dropdown_item">Nazwa górki3</a>
+                     <a href="#" class="nav_dropdown_item">Nazwa górki4</a>
+               </div>
+
+            </div>
+
+            <div class="nav_dropdown_district">
+               <a href="#">Karlikowo</a>
+               ...
+            </div>
+
+
+     <h3 class="nav_town">Gdynia</h3>
+            <div class="nav_dropdown_district">
+               <a href="#">Babie Doły</a>
+               <div class="nav_dropdown_hills">
+                     <a href="#" class="nav_dropdown_item">Nazwa górki1</a>
+                     <a href="#" class="nav_dropdown_item">Nazwa górki2</a>
+                     <a href="#" class="nav_dropdown_item">Nazwa górki3</a>
+                     <a href="#" class="nav_dropdown_item">Nazwa górki4</a>
+               </div>
+            </div>
+            <div class="nav_dropdown_district">
+               <a href="#">Chwarzno-Wiczlino</a>
+               <div class="nav_dropdown_hills">
+                     <a href="#" class="nav_dropdown_item">Nazwa górki1</a>
+                     <a href="#" class="nav_dropdown_item">Nazwa górki2</a>
+                     <a href="#" class="nav_dropdown_item">Nazwa górki3</a>
+                     <a href="#" class="nav_dropdown_item">Nazwa górki4</a>
+               </div>
+
+            </div>
+
+            <div class="nav_dropdown_district">
+               <a href="#">Chylonia</a>
+               <div class="nav_dropdown_hills">
+                     <a href="#" class="nav_dropdown_item">Nazwa górki1</a>
+                     <a href="#" class="nav_dropdown_item">Nazwa górki2</a>
+                     <a href="#" class="nav_dropdown_item">Nazwa górki3</a>
+                     <a href="#" class="nav_dropdown_item">Nazwa górki4</a>
+               </div>
+
+            </div>
+
+
+            <div class="nav_dropdown_district">
+                  <a href="#">Karwiny</a>
+               <div class="nav_dropdown_hills">
+                     <a href="#" class="nav_dropdown_item">Nazwa górki1</a>
+                     <a href="#" class="nav_dropdown_item">Nazwa górki2</a>
+                     <a href="#" class="nav_dropdown_item">Nazwa górki3</a>
+                     <a href="#" class="nav_dropdown_item">Nazwa górki4</a>
+               </div>
+
+            </div>
+
+            <div class="nav_dropdown_district">
             ...
-         </ul>
-      </li>
-   </ul>
+
+      </div>
+
+   </div>
+
+
 </nav>
 
-        	<!-- Sidebar -->
-					<div id="sidebar">
+<!--do zmiany -->
 						<div class="inner">
 
 							<!-- Search -->
@@ -451,12 +481,11 @@
 								</section>
 
 						</div>
-					</div>
 
-			</div>
 
 </main>
 <footer>a</footer>
 <script src="js/javaScript.js"></script>
+<script src="js/javaScriptNav.js"></script>
 </body>
 </html>

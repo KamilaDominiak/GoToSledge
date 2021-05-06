@@ -7,11 +7,16 @@
 @media (max-width: 817px) {
   .navbar {
     align-self: flex-end;
-    color: #ffffff;
+    color: #235875;
     flex-basis: 10%;
     font-size: 1rem;
     padding: 5%;
     padding-top: 10%;
+  }
+  .navbar:hover,
+  .navbar:active {
+    color: rgba(105, 185, 188, 1);
+    font-size: 2.5rem;
   }
 
   header h1 {
