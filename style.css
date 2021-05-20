@@ -108,6 +108,7 @@ main {
   margin: 10%;
   border-radius: 20px;
 }
+<<<<<<< HEAD
 .navbar {
   align-self: flex-end;
   color: #235875;
@@ -115,6 +116,15 @@ main {
   font-size: 1rem;
   padding: 5%;
   padding-top: 10%;
+=======
+
+#sidebar {
+  width: 20em;
+  margin-top: 20em;
+  border: solid;
+  overflow: hidden;
+  overflow-y: scroll;
+>>>>>>> main
 }
 ./*:hover,
 .navbar:active {
