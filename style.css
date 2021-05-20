@@ -27,20 +27,6 @@ header {
   max-width: 72rem;
 }
 
-.navbar {
-  align-self: flex-end;
-  color: #ffffff;
-  flex-basis: 10%;
-  font-size: 2rem;
-  padding: 5%;
-  padding-top: 10%;
-}
-.navbar:hover,
-.navbar:active {
-  color: rgba(105, 185, 188, 1);
-  font-size: 2.5rem;
-}
-
 header h1 {
   font-size: 3rem;
   flex-basis: 20%;
@@ -101,15 +87,16 @@ header h1 {
 }
 
 main {
-  background-color: #ffffff;
+  background-color: rgba(57, 69, 105, 0.231);
   display: flex;
   justify-content: center;
-
   margin: auto;
   width: calc(100% - 4rem);
   max-width: 72rem;
   z-index: 1;
   flex-wrap: wrap;
+  border: solid #53432bce;
+  border-radius: 25px;
 }
 
 #map2 {
@@ -119,15 +106,22 @@ main {
   align-self: left;
   padding: 5em;
   margin: 10%;
+  border-radius: 20px;
 }
+.navbar {
+  align-self: flex-end;
+  color: #235875;
+  flex-basis: 10%;
+  font-size: 1rem;
+  padding: 5%;
+  padding-top: 10%;
+}
+./*:hover,
+.navbar:active {
+  color: rgba(105, 185, 188, 1);
+  font-size: 2.5rem;
+}*/
 
-#sidebar {
-  width: 20em;
-  margin-top: 20em;
-  border: solid;
-  overflow: hidden;
-  overflow-y: scroll;
-}
 .formularz {
   padding: 5%;
   width: calc(100% - 7rem);
@@ -157,4 +151,109 @@ footer {
     )
     no-repeat;
   height: 50vh;
+}
+
+/*-------nowa darmowa mapka-----------*/
+
+#mapid {
+  height: 400px;
+  width: 500px;
+  display: block;
+  align-self: left;
+  padding: 5em;
+  margin: 10%;
+  border-radius: 20px;
+}
+
+/*========= SIDEBAR =================*/
+
+#sidebar {
+  /* width: 20em;
+  margin-top: 20em;
+  border: solid;
+  overflow: hidden;
+  overflow-y: scroll;*/
+  background-color: #99b2b7;
+  border-radius: 25px;
+  height: 100vh;
+  flex-grow: 2;
+  align-self: flex-end;
+  padding-top: 6rem;
+  overflow: auto;
+  scrollbar-width: none; /* For mozilla */
+}
+
+/* For Google Chrome and others */
+#sidebar ::-webkit-scrollbar {
+  display: none;
+}
+
+.nav_list {
+  padding-left: 20%;
+  text-align: left;
+  font-size: 1.4rem;
+  color: rgb(0, 0, 0);
+}
+
+a {
+  text-decoration: none;
+  color: #444;
+}
+a:hover {
+  color: #7a6a53;
+}
+
+.nav_town {
+  /*font-size: ;*/
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  /*color: ;*/
+}
+
+/* Dropdown */
+
+.nav_dropdown_district {
+  overflow: hidden;
+  max-height: 24px;
+  transition: 0.4s ease-in-out;
+}
+
+.nav_dropdown_icon {
+  margin-left: auto;
+  transition: 0.4s;
+}
+
+.nav_dropdown_hills {
+  /*background-color: ;*/
+  border-radius: 0.25rem;
+  margin-top: 0.1rem;
+
+  display: grid;
+  row-gap: 0.5rem;
+  padding: 0.75rem 2.5rem 0.75rem 1.8rem;
+}
+
+.nav_dropdown_item {
+  font-size: var(--smaller-font-size);
+  font-weight: var(--font-medium);
+  color: rgb(62, 62, 64);
+}
+
+.nav__dropdown-item:hover {
+  color: var(--first-color);
+}
+
+/* Show dropdown collapse */
+.nav_dropdown_district:hover {
+  max-height: 100rem;
+}
+
+/*Rotate icon arrow*/
+.nav_dropdown_district:hover .nav_dropdown_icon {
+  transform: rotate(180 deg);
+}
+
+.nav_dropdown:active {
+  color: rgba(105, 185, 188, 1);
+  font-size: 2.5rem;
 }
