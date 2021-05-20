@@ -37,6 +37,9 @@
       integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
       crossorigin=""
     ></script>
+
+    <!---------------------------------MyData------------------------------>
+    <script src="js/dataList.js"></script>
   </head>
   <body>
     <!--Header-->
@@ -491,7 +494,7 @@
     -->
 
       <!-------nowa mapka darmowa -->
-      <div id="mapid" style="width: 600px; height: 400px"></div>
+      <div id="mapid"></div>
       <script>
         var mymap = L.map("mapid").setView([54.4239, 18.4745], 14);
 
@@ -508,11 +511,14 @@
           }
         ).addTo(mymap);
 
-        // L.marker([51.5, -0.09])
-        //   .addTo(mymap)
-        //   .bindPopup("<b>Hello world!</b><br />I am a popup.")
-        //   .openPopup();
-        // var popup = L.popup();
+        for (var i = 0; i < dataList.length; i++) {
+          L.marker([dataList[i].position.lat, dataList[i].position.lng])
+            .addTo(mymap)
+            .bindPopup(dataList[i].name);
+        }
+
+        // random popup
+        var popup = L.popup();
 
         function onMapClick(e) {
           popup
@@ -564,94 +570,6 @@
             <div class="nav_dropdown_hills">
               <a href="#" class="nav_dropdown_item">Nazwa górki1</a>
               <a href="#" class="nav_dropdown_item">Nazwa górki2</a>
-              <a href="#" class="nav_dropdown_item">Nazwa górki3</a>
-              <a href="#" class="nav_dropdown_item">Nazwa górki4</a>
-            </div>
-          </div>
-          <div class="nav_dropdown_district">
-            <a href="#">Brzeźno</a>
-            <div class="nav_dropdown_hills">
-              <a href="#" class="nav_dropdown_item">Nazwa górki1</a>
-              <a href="#" class="nav_dropdown_item">Nazwa górki2</a>
-              <a href="#" class="nav_dropdown_item">Nazwa górki3</a>
-              <a href="#" class="nav_dropdown_item">Nazwa górki4</a>
-            </div>
-          </div>
-          <div class="nav_dropdown_district">
-            <a href="#">Chełm</a>
-            ...
-          </div>
-
-          <h3 class="nav_town">Sopot</h3>
-          <div class="nav_dropdown_district">
-            <a href="#">Brodwino</a>
-            <div class="nav_dropdown_hills">
-              <a href="#" class="nav_dropdown_item">Nazwa górki1</a>
-              <a href="#" class="nav_dropdown_item">Nazwa górki2</a>
-              <a href="#" class="nav_dropdown_item">Nazwa górki3</a>
-              <a href="#" class="nav_dropdown_item">Nazwa górki4</a>
-            </div>
-          </div>
-          <div class="nav_dropdown_district">
-            <a href="#">Dolny Sopot</a>
-            <div class="nav_dropdown_hills">
-              <a href="#" class="nav_dropdown_item">Nazwa górki1</a>
-              <a href="#" class="nav_dropdown_item">Nazwa górki2</a>
-              <a href="#" class="nav_dropdown_item">Nazwa górki3</a>
-              <a href="#" class="nav_dropdown_item">Nazwa górki4</a>
-            </div>
-          </div>
-
-          <div class="nav_dropdown_district">
-            <a href="#">Kamilenny Potok</a>
-            <div class="nav_dropdown_hills">
-              <a href="#" class="nav_dropdown_item">Nazwa górki1</a>
-              <a href="#" class="nav_dropdown_item">Nazwa górki2</a>
-              <a href="#" class="nav_dropdown_item">Nazwa górki3</a>
-              <a href="#" class="nav_dropdown_item">Nazwa górki4</a>
-            </div>
-          </div>
-
-          <div class="nav_dropdown_district">
-            <a href="#">Karlikowo</a>
-            ...
-          </div>
-
-          <h3 class="nav_town">Gdynia</h3>
-          <div class="nav_dropdown_district">
-            <a href="#">Babie Doły</a>
-            <div class="nav_dropdown_hills">
-              <a href="#" class="nav_dropdown_item">Nazwa górki1</a>
-              <a href="#" class="nav_dropdown_item">Nazwa górki2</a>
-              <a href="#" class="nav_dropdown_item">Nazwa górki3</a>
-              <a href="#" class="nav_dropdown_item">Nazwa górki4</a>
-            </div>
-          </div>
-          <div class="nav_dropdown_district">
-            <a href="#">Chwarzno-Wiczlino</a>
-            <div class="nav_dropdown_hills">
-              <a href="#" class="nav_dropdown_item">Nazwa górki1</a>
-              <a href="#" class="nav_dropdown_item">Nazwa górki2</a>
-              <a href="#" class="nav_dropdown_item">Nazwa górki3</a>
-              <a href="#" class="nav_dropdown_item">Nazwa górki4</a>
-            </div>
-          </div>
-
-          <div class="nav_dropdown_district">
-            <a href="#">Chylonia</a>
-            <div class="nav_dropdown_hills">
-              <a href="#" class="nav_dropdown_item">Nazwa górki1</a>
-              <a href="#" class="nav_dropdown_item">Nazwa górki2</a>
-              <a href="#" class="nav_dropdown_item">Nazwa górki3</a>
-              <a href="#" class="nav_dropdown_item">Nazwa górki4</a>
-            </div>
-          </div>
-
-          <div class="nav_dropdown_district">
-            <a href="#" id="Karwiny">Karwiny</a>
-            <div class="nav_dropdown_hills">
-              <a href="#" class="nav_dropdown_item">Przy Nałkowskiej</a>
-              <a href="#" class="nav_dropdown_item">Fizylierów</a>
               <a href="#" class="nav_dropdown_item">Nazwa górki3</a>
               <a href="#" class="nav_dropdown_item">Nazwa górki4</a>
             </div>

@@ -160,10 +160,11 @@ footer {
   height: 400px;
   width: 500px;
   display: block;
-  align-self: left;
+  align-self: flex-end;
   padding: 5em;
   margin: 10%;
   border-radius: 20px;
+  position: relative;
 }
 
 /*========= SIDEBAR =================*/

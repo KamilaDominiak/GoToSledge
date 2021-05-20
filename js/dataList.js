@@ -14,4 +14,11 @@ const dataList = [
     district: "Karwiny",
     position: { lat: 54.476191, lng: 18.501077 },
   },
+  {
+    id: 2,
+    name: "Górka abstrakcyjna",
+    city: "Gdynia",
+    district: "Karwiny",
+    position: { lat: 54.475, lng: 18.48 },
+  },
 ];
