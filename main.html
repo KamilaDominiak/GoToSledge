@@ -39,7 +39,6 @@
     ></script>
 
     <!---------------------------------MyData------------------------------>
-    <script src="js/dataList.js"></script>
   </head>
   <body>
     <!--Header-->
@@ -495,40 +494,6 @@
 
       <!-------nowa mapka darmowa -->
       <div id="mapid"></div>
-      <script>
-        var mymap = L.map("mapid").setView([54.4239, 18.4745], 14);
-
-        L.tileLayer(
-          "https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw",
-          {
-            maxZoom: 18,
-            attribution:
-              'Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, ' +
-              'Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
-            id: "mapbox/streets-v11",
-            tileSize: 512,
-            zoomOffset: -1,
-          }
-        ).addTo(mymap);
-
-        for (var i = 0; i < dataList.length; i++) {
-          L.marker([dataList[i].position.lat, dataList[i].position.lng])
-            .addTo(mymap)
-            .bindPopup(dataList[i].name);
-        }
-
-        // random popup
-        var popup = L.popup();
-
-        function onMapClick(e) {
-          popup
-            .setLatLng(e.latlng)
-            .setContent("You clicked the map at " + e.latlng.toString())
-            .openOn(mymap);
-        }
-
-        mymap.on("click", onMapClick);
-      </script>
 
       <!-- Menu -->
 
@@ -551,24 +516,23 @@
             <!--strzałka do dopracowania i dodania w pozostałych dzielnic-->
             <i class="bx bx-chevron-down nav_icon nav_dropdown_icon"></i>
             <div class="nav_dropdown_hills">
-              <a href="#" data-target="id1" class="nav_dropdown_item"
+              <a href="#" data-index="0" class="nav_dropdown_item"
                 >Nazwa górki1</a
               >
-              <a href="#" data-target="id" class="nav_dropdown_item"
+              <a href="#" data-index="1" class="nav_dropdown_item"
                 >Nazwa górki2</a
               >
-              <a href="#" data-target="id3" class="nav_dropdown_item"
+              <a href="#" data-index="2" class="nav_dropdown_item"
                 >Nazwa górki3</a
-              >
-              <a href="#" data-target="id4" class="nav_dropdown_item"
-                >Nazwa górki4</a
               >
             </div>
           </div>
           <div class="nav_dropdown_district">
             <a href="#">Brętowo</a>
             <div class="nav_dropdown_hills">
-              <a href="#" class="nav_dropdown_item">Nazwa górki1</a>
+              <a href="#" data-index="dupaKamili" class="nav_dropdown_item"
+                >Nazwa górki1</a
+              >
               <a href="#" class="nav_dropdown_item">Nazwa górki2</a>
               <a href="#" class="nav_dropdown_item">Nazwa górki3</a>
               <a href="#" class="nav_dropdown_item">Nazwa górki4</a>
@@ -580,6 +544,7 @@
       <!--do zmiany -->
     </main>
 
+    <script src="js/dataList.js"></script>
     <script src="js/javaScript.js"></script>
   </body>
 </html>
